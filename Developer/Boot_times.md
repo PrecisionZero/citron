@@ -32,8 +32,8 @@ Build ID: `26.5.1+mc1.21.11.fabric`
 
 ¹ The time taken for the window to show\
 ² The first boot, not counted for Average or RV\
-³ Standard Deviation
-⁴ Relative Variation
+³ Standard Deviation\
+⁴ Relative Variation\
 
 
 ## Citron 
@@ -66,5 +66,5 @@ Refer to page: [Visit](https://github.com/PrecisionZero/Citron/blob/main/Develop
 
 ¹ The time taken for the window to show\
 ² The first boot, not counted for Average or RV\
-³ Standard Deviation
-⁴ Relative Variation
+³ Standard Deviation\
+⁴ Relative Variation\
