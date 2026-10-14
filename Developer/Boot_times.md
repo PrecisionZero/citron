@@ -40,7 +40,9 @@ Build ID: `26.5.1+mc1.21.11.fabric`
 ### 1.21.11
 Adrenaline Build ID: `26.5.1+mc1.21.11.fabric`
 
-### dev.1.0.0+mc1.21.11.fabric
+<details>
+  <summary>dev.1.0.0+mc1.21.11.fabric</summary>
+  
 Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Developer/Development_stage.md#dev100mc12111fabric)
 
 | Boot number | Show time¹ | Load time | Total load time |
@@ -68,6 +70,7 @@ Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Devel
 ² The first boot, not counted for Average or RV\
 ³ Standard Deviation\
 ⁴ Relative Variation
+</details>
 
 ---
 
@@ -98,29 +101,27 @@ Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Devel
 
 ---
 
-<details>
-  <summary>dev.1.2.0+mc1.21.11.fabric</summary>
-  
-  Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Developer/Development_stage.md#dev120mc12111fabric)
+### dev.1.2.0+mc1.21.11.fabric
+
+Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Developer/Development_stage.md#dev120mc12111fabric)
 
 | Boot number | Show time | Load time | Total load time |
 | ----------- | ---------- | --------- | --------------- |
-| 0 | 39.55 | 18.04 | 57.60 |
-| 1 | 30.26 | 13.18 | 43.45 |
-| 2 | 33.03 | 14.43 | 47.47 |
-| 3 | 31.34 | 14.13 | 45.47 |
+| 0 |  |  |  |
+| 1 |  |  |  |
+| 2 |  |  |  |
+| 3 |  |  |  |
+| 4 |  |  |  |
+| 5 |  |  |  |
+
+
 
 ##### Breakdown
 
 | Metric | Show time | Load time | Total load time |
 | ----------- | ---------- | --------- | --------------- |
-| **Average** | 31.54 | 13.91 | 45.46 |
-| **% Difference from Adrenaline** | +1.41% | +9.96% | +3.93% |
-| **% Difference from Citron⁵** | -4.74% | -4.00% | -4.50% |
-| CV | 4.43% | 4.69% | 4.42% |
-| Range | 30.26 - 33.03 | 13.18 - 14.43 | 43.45 - 47.47 |
-
-⁵ The difference from the most recent Major Citron version, being 1.0.0, 2.0.0, excluding 1.1.0, 1.2.0
-</details>
-
-
+| **Average** |  |  |  |
+| **% Difference from Adrenaline** |  |  |  |
+| **% Difference from Citron** |  |  |  |
+| CV |  |  |  |
+| Range |  |  |  |
