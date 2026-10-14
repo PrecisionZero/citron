@@ -37,7 +37,7 @@ All external factors like the seed, memory, Windows power plan, apps open, and p
 | --- | --- |
 | Average FPS | Higher |
 | 1% low average FPS | Higher |
-| P99 |Animation Error| (ms) | Lower |
+| P99 \|Animation Error\| (ms) | Lower |
 | Adaptive STDEV | Lower |
 
 Use the median of the runs for each metric.
@@ -77,7 +77,7 @@ Build ID: `26.5.1+mc1.21.11.fabric`
 | 9 | 38.9 | 46.2 | 45.8 | 35.4 | 14.3 | 5.1 | 5.1 |
 | 10 | 31.1 | 22.1 | 31.3 | 20.4 | 8.9 | 3.1 | 3.1 |
 
-| Run | P99 |Animation Error| (ms) | Adaptive STDEV | CPU FPS / 10W | GPU FPS / 10W |
+| Run | P99 \|Animation Error\| (ms) | Adaptive STDEV | CPU FPS / 10W | GPU FPS / 10W |
 | --- | ---: | ---: | ---: | ---: |
 | 1 | 5.2 | 26.9 | 92.45 | 0 |
 | 2 | 7.9 | 18.1 | 110.32 | 0 |
@@ -108,7 +108,7 @@ Build ID: `26.5.1+mc1.21.11.fabric`
 | 0.1% low average FPS | 15.55 |
 | 0.1% low integral FPS | 5.75 |
 | Min FPS | 5.75 |
-| P99 |Animation Error| (ms) | 6.40 |
+| P99 \|Animation Error\| (ms) | 6.40 |
 | Adaptive STDEV | 21.80 |
 | CPU FPS / 10W | 94.94 |
 | GPU FPS / 10W | 0 |
@@ -124,7 +124,7 @@ Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Devel
 
 ### Stationary test
 
-| Run | Average FPS | 1% low average FPS | P99 |Animation Error| (ms) | Adaptive STDEV |
+| Run | Average FPS | 1% low average FPS | P99 \|Animation Error\| (ms) | Adaptive STDEV |
 | --- | ---: | ---: | ---: | ---: |
 | 1 | — | — | — | — |
 | 2 | — | — | — | — |
@@ -136,7 +136,7 @@ Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Devel
 | --- | ---: | ---: | ---: |
 | Average FPS | 111.50 | — | — |
 | 1% low average FPS | 42.90 | — | — |
-| P99 |Animation Error| (ms) | 6.40 | — | — |
+| P99 \|Animation Error\| (ms) | 6.40 | — | — |
 | Adaptive STDEV | 21.80 | — | — |
 
 Difference (%) = ((Citron - Adrenaline) / Adrenaline) × 100. Positive is better for FPS; negative is better for animation error and Adaptive STDEV.
