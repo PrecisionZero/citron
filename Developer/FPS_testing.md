@@ -4,9 +4,10 @@
 
 - Tool: CapFrameX.
 - Test only the final version in each major development series.
-- Take 5 captures of 60 seconds each.
+- Take 10 captures of 60 seconds each per pack.
 - Wait 60 seconds after loading the world.
 - Use the same world, scene, settings, and external conditions for both packs.
+- Use the same number of valid captures for a final comparison.
 
 ## Test setup
 
@@ -49,6 +50,11 @@ Version: `26.5.1+mc1.21.11.fabric`
 | 3 | 129.1 | 46.9 | 5.4 | 22.9 |
 | 4 | 138.3 | 64.0 | 4.2 | 20.7 |
 | 5 | 125.6 | 56.2 | 5.3 | 26.2 |
+| 6 | 134.9 | 65.2 | 3.6 | 19.5 |
+| 7 | 123.2 | 61.5 | 3.0 | 15.7 |
+| 8 | 107.0 | 26.7 | 3.4 | 14.7 |
+| 9 | 116.9 | 59.9 | 3.1 | 13.8 |
+| 10 | 109.9 | 40.1 | 3.2 | 11.9 |
 
 ---
 
@@ -70,13 +76,13 @@ Version: `dev.1.2.0+mc1.21.11.fabric`
 
 ## Summary and comparison
 
-Adrenaline summary values remain blank until the new baseline is recorded. Citron values are calculated from the five captures above.
+Adrenaline statistics use 10 captures. Citron statistics currently use 5 captures, so the comparison is provisional until five more Citron captures are recorded under the same conditions.
 
 | Metric | Adrenaline median | Adrenaline variance | Citron median | Citron variance | Difference (%) |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Average FPS | — | — | 122.50 | 330.14 | — |
-| 1% low average FPS | — | — | 57.10 | 64.13 | — |
-| P99 Animation Error (ms) | — | — | 4.40 | 0.38 | — |
-| Adaptive STDEV | — | — | 17.90 | 43.74 | — |
+| Average FPS | 127.35 | 134.94 | 122.50 | 330.14 | -3.81% |
+| 1% low average FPS | 60.05 | 154.12 | 57.10 | 64.13 | -4.91% |
+| P99 Animation Error (ms) | 3.90 | 0.94 | 4.40 | 0.38 | +12.82% |
+| Adaptive STDEV | 20.10 | 28.66 | 17.90 | 43.74 | -10.95% |
 
-Difference (%) = ((Citron median - Adrenaline median) / Adrenaline median) × 100. Higher FPS metrics are better; lower error and Adaptive STDEV are better. Lower variance means more consistent captures.
+Difference (%) = ((Citron median - Adrenaline median) / Adrenaline median) × 100. Higher FPS metrics are better; lower error and Adaptive STDEV are better. Lower variance means more consistent captures. Variance is the sample variance across captures.
