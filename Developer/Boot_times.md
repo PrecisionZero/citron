@@ -40,7 +40,7 @@ Build ID: `26.5.1+mc1.21.11.fabric`
 ### 1.21.11
 Adrenaline Build ID: `26.5.1+mc1.21.11.fabric`
 
-### Dev.1.0.0+mc1.21.11.fabric
+### dev.1.0.0+mc1.21.11.fabric
 Refer to page: [Visit](https://github.com/PrecisionZero/Citron/blob/main/Developer/Development_stage.md#010mc12111fabric)
 
 | Boot number | Show time¹ | Load time | Total load time |
