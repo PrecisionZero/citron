@@ -36,13 +36,11 @@ Use the median to compare performance and variance to compare consistency betwee
 
 ---
 
-## Adrenaline baseline
+## Adrenaline
 
 Version: `26.5.1+mc1.21.11.fabric`
 
-### Captures
-
-Captures with reduced FPS caused by Dynamic FPS while idle have been removed. The five retained captures are shown below; run a fresh baseline under stable conditions before using these results for a final comparison.
+### Stationary test
 
 | Run | Average FPS | 1% low average FPS | P99 Animation Error (ms) | Adaptive STDEV |
 | --- | ---: | ---: | ---: | ---: |
