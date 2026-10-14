@@ -14,36 +14,22 @@
 | Setting | Value |
 | --- | --- |
 | World seed | `5872972574357925067` |
-| Test scene | Same position and direction near the village; record coordinates before testing |
+| Test scene | Same position and direction near the village |
 | Render distance | 12 chunks |
 | Simulation distance | 8 chunks |
-| Graphics | Custom |
-| Shaders | Off |
-| VSync | Off |
-| Max framerate | 260 FPS |
-| Fullscreen | On |
-| Resolution | Native display resolution |
-| Biome blend | 2 |
-| Particles | Minimal |
-| Clouds | On |
-| Entity distance scaling | 100% |
-| Entity shadows | On |
+| Max framerate | Unlimited |
 | Mipmap levels | 4 |
-| Resource packs | None |
-| Weather / time | Clear / noon |
+| RAM allocated | 4096MB |
 
-Disable the daylight and weather cycles in the test world:
+### Hardware settings
 
-```mcfunction
-/gamerule doDaylightCycle false
-/gamerule doWeatherCycle false
-/time set noon
-/weather clear
-```
+| Component | Value |
+| --- | --- |
+| CPU | Intel i3-8145u |
+| GPU | Intel UHD Graphics 620 |
+| RAM | 12 GB |
 
-Use the same world save in both instances, not just the same seed. Keep the laptop plugged in and use the same Windows power mode. Keep all video settings identical.
-
-The 260 FPS cap reflects the current `options.txt`. Keep it for a realistic test using your current settings. Because this cap can limit the measured FPS, do not compare these results with tests made using an unlimited cap.
+All external factors like the seed, memory, windows power plan, apps open, and plug in status remain the same throughout
 
 ### Metrics
 
