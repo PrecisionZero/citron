@@ -1,4 +1,4 @@
-## 0.1.0+mc1.21.11.fabric
+## dev.1.0.0+mc1.21.11.fabric
 
 ### Added mods
 
