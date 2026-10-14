@@ -51,13 +51,28 @@ Build ID: `26.5.1+mc1.21.11.fabric`
 
 ### Stationary test
 
-10 captures recorded on 2026-10-14. The table contains only the metrics used for comparison.
+10 captures recorded on 2026-10-14.
+
+| Run | Time | Average FPS | 1% low average FPS | P99 Animation Error (ms) | Adaptive STDEV |
+| --- | --- | ---: | ---: | ---: | ---: |
+| 1 | 14:20:40 | 138.7 | 60.2 | 5.2 | 26.9 |
+| 2 | 14:22:22 | 88.3 | 34.6 | 7.9 | 18.1 |
+| 3 | 14:23:56 | 136.1 | 60.2 | 4.7 | 23.7 |
+| 4 | 14:25:12 | 89.6 | 27.4 | 9.0 | 18.5 |
+| 5 | 14:27:12 | 129.1 | 46.9 | 5.4 | 22.9 |
+| 6 | 14:29:46 | 138.3 | 64.0 | 4.2 | 20.7 |
+| 7 | 14:30:55 | 96.4 | 26.8 | 8.3 | 20.5 |
+| 8 | 14:35:33 | 125.6 | 56.2 | 5.3 | 26.2 |
+| 9 | 14:39:45 | 97.4 | 38.9 | 7.4 | 23.7 |
+| 10 | 14:41:00 | 84.0 | 31.1 | 7.9 | 18.0 |
+
+#### Breakdown
 
 | Metric | Median |
 | --- | ---: |
 | Average FPS | 111.50 |
 | 1% low average FPS | 42.90 |
-| P99 \|Animation Error\| (ms) | 6.40 |
+| P99 Animation Error (ms) | 6.40 |
 | Adaptive STDEV | 21.80 |
 
 ---
