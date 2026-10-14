@@ -124,5 +124,4 @@ Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Devel
 | CV | 3.79% | 6.31% | 3.89% |
 | Range | 30.35 - 33.70 | 12.41 - 14.78 | 42.77 - 47.40 |
 
-⁵ The difference from the most recent Major Citron version, being 1.0.0, 2.0.0, excluding 1.1.0, 1.2.0
-</details>
+⁵ The difference from the most recent Major Citron version
