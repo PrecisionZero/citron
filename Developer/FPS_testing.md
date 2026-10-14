@@ -33,14 +33,14 @@ All external factors like the seed, memory, Windows power plan, apps open, and p
 
 ### Metrics
 
-| Metric | Better result |
-| --- | --- |
-| Average FPS | Higher |
-| 1% low average FPS | Higher |
-| P99 \|Animation Error\| (ms) | Lower |
-| Adaptive STDEV | Lower |
+| Metric | Purpose | Better result |
+| --- | --- | --- |
+| Average FPS | Overall performance | Higher |
+| 1% low average FPS | Performance during slower frames | Higher |
+| P99 Animation Error (ms) | Animation smoothness error | Lower |
+| Adaptive STDEV | Frame-time consistency within a capture | Lower |
 
-Use the median of the runs for each metric.
+For each metric, use the median for the comparison. SD and CV below show variation between captures, not frame-to-frame variation within a capture.
 
 ---
 
@@ -68,12 +68,14 @@ Build ID: `26.5.1+mc1.21.11.fabric`
 
 #### Breakdown
 
-| Metric | Median |
-| --- | ---: |
-| Average FPS | 111.50 |
-| 1% low average FPS | 42.90 |
-| P99 Animation Error (ms) | 6.40 |
-| Adaptive STDEV | 21.80 |
+| Metric | Mean | Median | SD | CV | Range |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Average FPS | 112.35 | 111.50 | 23.01 | 20.48% | 84.0–138.7 |
+| 1% low average FPS | 44.63 | 42.90 | 14.65 | 32.81% | 26.8–64.0 |
+| P99 Animation Error (ms) | 6.53 | 6.40 | 1.73 | 26.56% | 4.2–9.0 |
+| Adaptive STDEV | 21.92 | 21.80 | 3.26 | 14.87% | 18.0–26.9 |
+
+SD is the sample standard deviation. CV = SD / mean × 100%. A lower CV means the repeated captures were more consistent with each other.
 
 ---
 
@@ -84,7 +86,7 @@ Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Devel
 
 ### Stationary test
 
-| Run | Average FPS | 1% low average FPS | P99 \|Animation Error\| (ms) | Adaptive STDEV |
+| Run | Average FPS | 1% low average FPS | P99 Animation Error (ms) | Adaptive STDEV |
 | --- | ---: | ---: | ---: | ---: |
 | 1 | — | — | — | — |
 | 2 | — | — | — | — |
@@ -92,17 +94,32 @@ Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Devel
 
 #### Breakdown
 
-| Metric | Adrenaline median | Citron median | Difference (%) |
-| --- | ---: | ---: | ---: |
-| Average FPS | 111.50 | — | — |
-| 1% low average FPS | 42.90 | — | — |
-| P99 \|Animation Error\| (ms) | 6.40 | — | — |
-| Adaptive STDEV | 21.80 | — | — |
+| Metric | Mean | Median | SD | CV | Range |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Average FPS | — | — | — | — | — |
+| 1% low average FPS | — | — | — | — | — |
+| P99 Animation Error (ms) | — | — | — | — | — |
+| Adaptive STDEV | — | — | — | — | — |
 
-Difference (%) = ((Citron - Adrenaline) / Adrenaline) × 100. Positive is better for FPS; negative is better for animation error and Adaptive STDEV.
+#### Comparison
+
+| Metric | Adrenaline median | Citron median | Difference (%) | Adrenaline CV | Citron CV |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Average FPS | 111.50 | — | — | 20.48% | — |
+| 1% low average FPS | 42.90 | — | — | 32.81% | — |
+| P99 Animation Error (ms) | 6.40 | — | — | 26.56% | — |
+| Adaptive STDEV | 21.80 | — | — | 14.87% | — |
+
+Difference (%) = ((Citron median - Adrenaline median) / Adrenaline median) × 100. Positive is better for FPS; negative is better for Animation Error and Adaptive STDEV. Lower CV means more repeatable results between runs.
 
 ### Movement test (optional)
 
 Use the same saved world, starting position and route. Capture 60 seconds per run. If testing chunk generation, restore a copy of the world from before that route was explored before each run. Keep movement results separate from the stationary test.
+
+| Run | Average FPS | 1% low average FPS | P99 Animation Error (ms) | Adaptive STDEV |
+| --- | ---: | ---: | ---: | ---: |
+| 1 | — | — | — | — |
+| 2 | — | — | — | — |
+| 3 | — | — | — | — |
 
 Notes: [Fill in]
