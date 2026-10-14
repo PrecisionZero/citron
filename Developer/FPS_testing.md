@@ -42,18 +42,15 @@ Version: `26.5.1+mc1.21.11.fabric`
 
 ### Captures
 
+Captures with reduced FPS caused by Dynamic FPS while idle have been removed. The five retained captures are shown below; run a fresh baseline under stable conditions before using these results for a final comparison.
+
 | Run | Average FPS | 1% low average FPS | P99 Animation Error (ms) | Adaptive STDEV |
 | --- | ---: | ---: | ---: | ---: |
 | 1 | 138.7 | 60.2 | 5.2 | 26.9 |
-| 2 | 88.3 | 34.6 | 7.9 | 18.1 |
-| 3 | 136.1 | 60.2 | 4.7 | 23.7 |
-| 4 | 89.6 | 27.4 | 9.0 | 18.5 |
-| 5 | 129.1 | 46.9 | 5.4 | 22.9 |
-| 6 | 138.3 | 64.0 | 4.2 | 20.7 |
-| 7 | 96.4 | 26.8 | 8.3 | 20.5 |
-| 8 | 125.6 | 56.2 | 5.3 | 26.2 |
-| 9 | 97.4 | 38.9 | 7.4 | 23.7 |
-| 10 | 84.0 | 31.1 | 7.9 | 18.0 |
+| 2 | 136.1 | 60.2 | 4.7 | 23.7 |
+| 3 | 129.1 | 46.9 | 5.4 | 22.9 |
+| 4 | 138.3 | 64.0 | 4.2 | 20.7 |
+| 5 | 125.6 | 56.2 | 5.3 | 26.2 |
 
 ---
 
@@ -71,13 +68,15 @@ Version: `dev.1.2.0+mc1.21.11.fabric`
 
 ---
 
-## Comparison
+## Summary and comparison template
+
+Fill this table with the new baseline and Citron results after testing.
 
 | Metric | Adrenaline median | Adrenaline variance | Citron median | Citron variance | Difference (%) |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Average FPS | 111.50 | 529.50 | — | — | — |
-| 1% low average FPS | 42.90 | 214.48 | — | — | — |
-| P99 Animation Error (ms) | 6.40 | 3.01 | — | — | — |
-| Adaptive STDEV | 21.80 | 10.62 | — | — | — |
+| Average FPS | — | — | — | — | — |
+| 1% low average FPS | — | — | — | — | — |
+| P99 Animation Error (ms) | — | — | — | — | — |
+| Adaptive STDEV | — | — | — | — | — |
 
 Difference (%) = ((Citron median - Adrenaline median) / Adrenaline median) × 100. Higher FPS metrics are better; lower error and Adaptive STDEV are better. Lower variance means more consistent captures.
