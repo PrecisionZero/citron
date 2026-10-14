@@ -4,7 +4,7 @@
 
 - Tool: CapFrameX.
 - Test only the final version in each major development series.
-- Take 3 captures of 60 seconds each.
+- Take 5 captures of 60 seconds each.
 - Wait 60 seconds after loading the world.
 - Use the same world, scene, settings, and external conditions for both packs.
 
@@ -32,7 +32,7 @@
 | P99 Animation Error (ms) | Lower |
 | Adaptive STDEV | Lower |
 
-Use the median to compare performance and variance to compare consistency between captures.
+Use the median to compare performance and sample variance to compare consistency between captures.
 
 ---
 
@@ -56,25 +56,27 @@ Version: `26.5.1+mc1.21.11.fabric`
 
 Version: `dev.1.2.0+mc1.21.11.fabric`
 
-### Captures
+### Stationary test
 
 | Run | Average FPS | 1% low average FPS | P99 Animation Error (ms) | Adaptive STDEV |
 | --- | ---: | ---: | ---: | ---: |
-| 1 | — | — | — | — |
-| 2 | — | — | — | — |
-| 3 | — | — | — | — |
+| 1 | 130.2 | 57.1 | 5.3 | 26.8 |
+| 2 | 122.5 | 57.8 | 4.4 | 17.9 |
+| 3 | 91.5 | 43.4 | 5.1 | 11.8 |
+| 4 | 97.5 | 46.0 | 4.3 | 11.5 |
+| 5 | 128.4 | 61.7 | 3.8 | 22.1 |
 
 ---
 
-## Summary and comparison template
+## Summary and comparison
 
-Fill this table with the new baseline and Citron results after testing.
+Adrenaline summary values remain blank until the new baseline is recorded. Citron values are calculated from the five captures above.
 
 | Metric | Adrenaline median | Adrenaline variance | Citron median | Citron variance | Difference (%) |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Average FPS | — | — | — | — | — |
-| 1% low average FPS | — | — | — | — | — |
-| P99 Animation Error (ms) | — | — | — | — | — |
-| Adaptive STDEV | — | — | — | — | — |
+| Average FPS | — | — | 122.50 | 330.14 | — |
+| 1% low average FPS | — | — | 57.10 | 64.13 | — |
+| P99 Animation Error (ms) | — | — | 4.40 | 0.38 | — |
+| Adaptive STDEV | — | — | 17.90 | 43.74 | — |
 
 Difference (%) = ((Citron median - Adrenaline median) / Adrenaline median) × 100. Higher FPS metrics are better; lower error and Adaptive STDEV are better. Lower variance means more consistent captures.
