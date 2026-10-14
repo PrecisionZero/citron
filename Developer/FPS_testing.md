@@ -33,7 +33,7 @@
 | P99 Animation Error (ms) | Lower |
 | Adaptive STDEV | Lower |
 
-Use the median to compare performance and sample variance to compare consistency between captures.
+Use the median to compare performance. CV (coefficient of variation) is calculated as sample standard deviation divided by the mean, multiplied by 100%, and describes relative variation between captures.
 
 ---
 
@@ -56,6 +56,15 @@ Version: `26.5.1+mc1.21.11.fabric`
 | 9 | 116.9 | 59.9 | 3.1 | 13.8 |
 | 10 | 109.9 | 40.1 | 3.2 | 11.9 |
 
+### Breakdown
+
+| Metric | Median | Difference from Adrenaline | CV |
+| --- | ---: | ---: | ---: |
+| Average FPS | 127.35 | — | 9.22% |
+| 1% low average FPS | 60.05 | — | 22.95% |
+| P99 Animation Error (ms) | 3.90 | — | 23.60% |
+| Adaptive STDEV | 20.10 | — | 27.31% |
+
 ---
 
 ## Citron
@@ -72,17 +81,15 @@ Version: `dev.1.2.0+mc1.21.11.fabric`
 | 4 | 97.5 | 46.0 | 4.3 | 11.5 |
 | 5 | 128.4 | 61.7 | 3.8 | 22.1 |
 
----
+### Breakdown
 
-## Summary and comparison
+Citron currently has five captures, compared with ten for the Adrenaline baseline. The comparison is provisional until both packs have the same number of valid captures.
 
-Adrenaline statistics use 10 captures. Citron statistics currently use 5 captures, so the comparison is provisional until five more Citron captures are recorded under the same conditions.
+| Metric | Median | Difference from Adrenaline | CV |
+| --- | ---: | ---: | ---: |
+| Average FPS | 122.50 | -3.81% | 15.94% |
+| 1% low average FPS | 57.10 | -4.91% | 15.05% |
+| P99 Animation Error (ms) | 4.40 | +12.82% | 13.41% |
+| Adaptive STDEV | 17.90 | -10.95% | 36.70% |
 
-| Metric | Adrenaline median | Adrenaline variance | Citron median | Citron variance | Difference (%) |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Average FPS | 127.35 | 134.94 | 122.50 | 330.14 | -3.81% |
-| 1% low average FPS | 60.05 | 154.12 | 57.10 | 64.13 | -4.91% |
-| P99 Animation Error (ms) | 3.90 | 0.94 | 4.40 | 0.38 | +12.82% |
-| Adaptive STDEV | 20.10 | 28.66 | 17.90 | 43.74 | -10.95% |
-
-Difference (%) = ((Citron median - Adrenaline median) / Adrenaline median) × 100. Higher FPS metrics are better; lower error and Adaptive STDEV are better. Lower variance means more consistent captures. Variance is the sample variance across captures.
+Difference (%) = ((Citron median - Adrenaline median) / Adrenaline median) × 100. Positive differences are better for FPS metrics; negative differences are better for Animation Error and Adaptive STDEV. Lower CV means less relative variation between captures.
