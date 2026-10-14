@@ -114,14 +114,15 @@ Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Devel
 | 4 | 32.41 | 14.10 | 46.51 |
 | 5 | 32.19 | 13.61 | 45.80 |
 
-
-
 ##### Breakdown
 
 | Metric | Show time | Load time | Total load time |
 | ----------- | ---------- | --------- | --------------- |
-| **Average** |  |  |  |
-| **% Difference from Adrenaline** |  |  |  |
-| **% Difference from Citron** |  |  |  |
-| CV |  |  |  |
-| Range |  |  |  |
+| **Average** | 32.06 | 13.72 | 45.79 |
+| **% Difference from Adrenaline** | +3.09% | +8.46% | +4.69% |
+| **% Difference from Citron⁵** | -3.17% | -5.31% | -3.80% |
+| CV | 3.79% | 6.31% | 3.89% |
+| Range | 30.35 - 33.70 | 12.41 - 14.78 | 42.77 - 47.40 |
+
+⁵ The difference from the most recent Major Citron version, being 1.0.0, 2.0.0, excluding 1.1.0, 1.2.0
+</details>
