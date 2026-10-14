@@ -107,7 +107,7 @@ Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Devel
 
 | Boot number | Show time | Load time | Total load time |
 | ----------- | ---------- | --------- | --------------- |
-| 0 |  |  |  |
+| 0 | 39.66 | 17.98 | 57.65 |
 | 1 |  |  |  |
 | 2 |  |  |  |
 | 3 |  |  |  |
