@@ -30,3 +30,17 @@ To make the foundation to what Citron will be built off from.
 #### Purpose
 
 Improve utility and UX
+
+---
+
+## dev.1.2.0+mc1.21.11.fabric
+
+### Added mods
+
+- [Mouse Tweaks](https://modrinth.com/mod/mouse-tweaks)
+- [Lamp Dynamic Lights](https://modrinth.com/mod/lambdynamiclights)
+
+#### Purpose
+
+Improve utility and UX
+
