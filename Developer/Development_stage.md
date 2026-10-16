@@ -80,4 +80,16 @@ Improvement carried forward
 
 ### Notes
 
-- Uses custom buttons and elements to make the menu look complete
+- Uses custom button arrangements to make the menu look better
+
+---
+
+## dev.2.2.0+mc1.21.11.fabric
+
+#### Purpose
+
+Main menu UI improvement
+
+### Notes
+
+- Added an "Extra Mods" button to include all the custom mods users may add that I haven't accounted for
