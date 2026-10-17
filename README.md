@@ -22,7 +22,9 @@
 
 ## About
 
-Citron is built around performance, convenience, and useful quality-of-life features. The idea is to make Minecraft more comfortable to play without turning it into a different game. I want the features that make everyday gameplay better to already be there, so you don't have to find and set everything up yourself. That's what I mean by **Comfort Utility**.
+Citron is built around performance, convenience, and useful quality-of-life features. The idea is to make Minecraft more comfortable to play without turning it into a different game.  
+
+I want the features that make everyday gameplay better to already be there, so you don't have to find and set everything up yourself. That's what I mean by **Integrated Utility**.
 
 ## Current Development
 
@@ -42,10 +44,18 @@ Citron is for players who want performance improvements but also want a useful s
 
 ## Built-in Features
 
-From the start, Citron includes features like Zoom and Shulker Box Tooltips. These are the kinds of additions that make everyday gameplay easier without going overboard. I want the features to be useful, not just there to make the modpack look bigger.
+From the start, Citron includes features like Zoom and Shulker Box Tooltips. These are the kinds of additions that make everyday gameplay easier without going overboard. I want the features to be useful, not just there to make the modpack look bigger.  
 
 Citron is still in development, so the included mods and configurations may change as I work on it.
 
 ## Adrenaline
 
 Citron wouldn't be where it is without [Adrenaline](https://github.com/skywardmc/adrenaline). It gave me the performance foundation to build on, so credit where it's due: thank you to the Adrenaline team.
+
+## Navigation
+
+Visit these pages to understand what point of development the modpack is at:
+
+- [Overall development](https://github.com/PrecisionZero/citron/blob/main/Developer/Development_stage.md)
+- [Boot times](https://github.com/PrecisionZero/citron/blob/main/Developer/Boot_times.md)
+- [FPS performance](https://github.com/PrecisionZero/citron/blob/main/Developer/FPS_testing.md)
