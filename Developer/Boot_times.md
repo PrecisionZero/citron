@@ -1,4 +1,4 @@
-# Testing stage for boot times
+# Boot Time Testing
 
 ## Raw Adrenaline
 
@@ -7,7 +7,7 @@ Build ID: `26.5.1+mc1.21.11.fabric`
 
 | Boot number | Show time¹ | Load time | Total load time |
 | ----------- | ---------- | --------- | --------------- |
-| 0² | 51.43 | 07.01 |58.45 |
+| 0² | 51.43 | 07.01 | 58.45 |
 | 1 | 30.20 | 13.77 | 43.97 |
 | 2 | 31.27 | 12.18 | 43.35 |
 | 3 | 32.95 | 12.90 | 45.85 |
@@ -30,20 +30,22 @@ Build ID: `26.5.1+mc1.21.11.fabric`
 | **CV⁴** | 4.88% | 5.06% | 4.40% |
 | **Range** | 29.06 - 33.25 | 11.96 - 13.77 | 41.03 - 46.87 |
 
-¹ The time taken for the window to show\
-² The first boot, not counted for Average or RV\
-³ Standard Deviation\
-⁴ Relative Variation
+---
 
+## Citron
 
-## Citron 
 ### 1.21.11
+
 Adrenaline Build ID: `26.5.1+mc1.21.11.fabric`
 
+Run 0 is the first launch and is excluded from summary statistics.
+
 <details>
-  <summary>dev.1.0.0+mc1.21.11.fabric</summary>
-  
-Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Developer/Development_stage.md#dev100mc12111fabric)
+  <summary>1.0.0-dev.1+mc1.21.11.fabric</summary>
+
+Original build ID: `dev.1.0.0+mc1.21.11.fabric`
+
+Refer to: [Development stage](https://github.com/PrecisionZero/citron/blob/main/Developer/Development_stage.md#100-dev1mc12111fabric)
 
 | Boot number | Show time¹ | Load time | Total load time |
 | ----------- | ---------- | --------- | --------------- |
@@ -65,49 +67,47 @@ Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Devel
 | **SD³** | 0.67 | 1.08 | 1.09 |
 | **CV⁴** | 2.01% | 7.46% | 2.28% |
 | **Range** | 32.22 - 33.65 | 13.12 - 16.14 | 45.69 - 48.36 |
-
-¹ The time taken for the window to show\
-² The first boot, not counted for Average or RV\
-³ Standard Deviation\
-⁴ Relative Variation
 </details>
 
 ---
 
 <details>
-  <summary>dev.1.1.0+mc1.21.11.fabric</summary>
-  
-  Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Developer/Development_stage.md#dev110mc12111fabric)
+  <summary>1.0.0-dev.2+mc1.21.11.fabric</summary>
 
-| Boot number | Show time | Load time | Total load time |
+Original build ID: `dev.1.1.0+mc1.21.11.fabric`
+
+Refer to: [Development stage](https://github.com/PrecisionZero/citron/blob/main/Developer/Development_stage.md#100-dev2mc12111fabric)
+
+| Boot number | Show time¹ | Load time | Total load time |
 | ----------- | ---------- | --------- | --------------- |
-| 0 | 39.55 | 18.04 | 57.60 |
+| 0² | 39.55 | 18.04 | 57.60 |
 | 1 | 30.26 | 13.18 | 43.45 |
 | 2 | 33.03 | 14.43 | 47.47 |
 | 3 | 31.34 | 14.13 | 45.47 |
 
 ##### Breakdown
 
-| Metric | Show time | Load time | Total load time |
+| Metric | Show time¹ | Load time | Total load time |
 | ----------- | ---------- | --------- | --------------- |
 | **Average** | 31.54 | 13.91 | 45.46 |
 | **% Difference from Adrenaline** | +1.41% | +9.96% | +3.93% |
-| **% Difference from Citron⁵** | -4.74% | -4.00% | -4.50% |
-| CV | 4.43% | 4.69% | 4.42% |
+| **% Difference from baseline build⁵** | -4.74% | -4.00% | -4.50% |
+| CV⁴ | 4.43% | 4.69% | 4.42% |
 | Range | 30.26 - 33.03 | 13.18 - 14.43 | 43.45 - 47.47 |
-
-⁵ The difference from the most recent Major Citron version, being 1.0.0, 2.0.0, excluding 1.1.0, 1.2.0
 </details>
 
 ---
 
-### dev.1.2.0+mc1.21.11.fabric
+<details>
+  <summary>1.0.0-dev.3+mc1.21.11.fabric</summary>
 
-Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Developer/Development_stage.md#dev120mc12111fabric)
+Original build ID: `dev.1.2.0+mc1.21.11.fabric`
 
-| Boot number | Show time | Load time | Total load time |
+Refer to: [Development stage](https://github.com/PrecisionZero/citron/blob/main/Developer/Development_stage.md#100-dev3mc12111fabric)
+
+| Boot number | Show time¹ | Load time | Total load time |
 | ----------- | ---------- | --------- | --------------- |
-| 0 | 39.66 | 17.98 | 57.65 |
+| 0² | 39.66 | 17.98 | 57.65 |
 | 1 | 30.35 | 12.41 | 42.77 |
 | 2 | 31.66 | 14.78 | 46.45 |
 | 3 | 33.70 | 13.70 | 47.40 |
@@ -116,12 +116,21 @@ Refer to: [Version page](https://github.com/PrecisionZero/citron/blob/main/Devel
 
 ##### Breakdown
 
-| Metric | Show time | Load time | Total load time |
+| Metric | Show time¹ | Load time | Total load time |
 | ----------- | ---------- | --------- | --------------- |
 | **Average** | 32.06 | 13.72 | 45.79 |
 | **% Difference from Adrenaline** | +3.09% | +8.46% | +4.69% |
-| **% Difference from Citron⁵** | -3.17% | -5.31% | -3.80% |
-| CV | 3.79% | 6.31% | 3.89% |
+| **% Difference from baseline build⁵** | -3.17% | -5.31% | -3.80% |
+| CV⁴ | 3.79% | 6.31% | 3.89% |
 | Range | 30.35 - 33.70 | 12.41 - 14.78 | 42.77 - 47.40 |
+</details>
 
-⁵ The difference from the most recent Major Citron version
+---
+
+¹ Time taken for the window to appear.  
+² First launch; excluded from summary statistics.  
+³ Standard deviation.  
+⁴ Coefficient of variation.  
+⁵ Difference from the baseline Citron build, `1.0.0-dev.1+mc1.21.11.fabric`.
+
+The number of runs differs between versions, so the recorded differences should be treated as descriptive rather than a fully balanced comparison.
