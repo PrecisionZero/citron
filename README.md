@@ -1,12 +1,14 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/PrecisionZero/citron/refs/heads/main/Assets/Page/Logo.svg" alt="Citron Logo" width="150">
+  <img src="https://raw.githubusercontent.com/PrecisionZero/citron/refs/heads/main/Assets/Titles/Main/White.svg" alt="Citron Title" width="300">
 </p>
 
-<div align="center">
+---
 
-# Citron
+<p align="center">
+A Minecraft modpack focused on performance and utility while presenting it in a more welcoming and playable way
+</p>
 
-</div>
+---
 
 ![Citron Progress](https://raw.githubusercontent.com/PrecisionZero/citron/refs/heads/main/Assets/Citron_progress_2.webp)
 
