@@ -11,7 +11,7 @@ Citron is a Minecraft modpack built around performance, convenience, and careful
 
 ## Current Development
 
-Build: `1.0.0-dev.7+mc1.21.11.fabric`
+Build: `1.0.0-dev.8+mc1.21.11.fabric`
 
 Minecraft: `1.21.11`  
 Loader: `Fabric`  
