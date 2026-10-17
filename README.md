@@ -7,4 +7,20 @@ Give it some time
 
 ## About
 
-Citron is a Minecraft modpack made to do something that is completely different to the current performance niche.
+Citron is a Minecraft modpack built around performance, convenience, and carefully selected quality-of-life features. It aims to make Minecraft more efficient and comfortable to play without turning it into a different game.
+
+## Current Development
+
+Build: `1.0.0-dev.7+mc1.21.11.fabric`
+
+Minecraft: `1.21.11`  
+Loader: `Fabric`  
+Status: In development
+
+Features and configurations may change during development.
+
+## Developer Documentation
+
+- [Development stages](Developer/Development_stage.md)
+- [Boot-time testing](Developer/Boot_times.md)
+- [FPS testing](Developer/FPS_testing.md)
