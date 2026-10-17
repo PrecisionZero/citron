@@ -5,12 +5,16 @@
 ---
 
 <p align="center">
-A Minecraft modpack focused on performance and utility while presenting it in a more welcoming and playable way
+  A Minecraft modpack focused on performance and utility while presenting it in a more welcoming and playable way
 </p>
 
 ---
 
-![Citron Progress](https://raw.githubusercontent.com/PrecisionZero/citron/refs/heads/main/Assets/Citron_progress_2.webp)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/PrecisionZero/citron/refs/heads/main/Assets/Citron_progress_2.webp" alt="Citron Progress" width="400">
+</p>
+
+---
 
 ## About
 
