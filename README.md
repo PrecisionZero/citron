@@ -5,7 +5,7 @@
 ---
 
 <p align="center">
-  A Minecraft modpack focused on performance and utility while presenting it in a more welcoming and playable way
+  A Minecraft modpack focused on performance and utility while presenting it in a more welcoming and playable way.
 </p>
 
 ---
@@ -18,7 +18,7 @@
 
 ## About
 
-Citron is a Minecraft modpack built around performance, convenience, and carefully selected quality-of-life features. It aims to make Minecraft more efficient and comfortable to play without turning it into a different game.
+Citron is a Minecraft modpack built around performance, convenience, and carefully selected quality-of-life features. It aims to make your Minecraft experience more convenient and comfortable without turning it into a different game.
 
 ## Current Development
 
@@ -30,8 +30,6 @@ Status: In development
 
 Features and configurations may change during development.
 
-## Developer Documentation
+## Nature
 
-- [Development stages](Developer/Development_stage.md)
-- [Boot-time testing](Developer/Boot_times.md)
-- [FPS testing](Developer/FPS_testing.md)
+Citron would be nothing if it wasn't for [Adrenaline](https://github.com/skywardmc/adrenaline). Thank you Adrenaline for being our baseline and our very foundation used to build Citron off from. 
