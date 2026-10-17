@@ -1,7 +1,12 @@
-![Citron Banner](https://cdn.modrinth.com/data/cached_images/62ca3c4df7f5cfae6e5213523f6f52962b66b78e.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/PrecisionZero/citron/refs/heads/main/Assets/Page/Logo.svg" alt="Citron Logo" width="150">
+</p>
 
-**The tree is still a seedling**\
-Give it some time
+<div align="center">
+
+# Citron
+
+</div>
 
 ![Citron Progress](https://raw.githubusercontent.com/PrecisionZero/citron/refs/heads/main/Assets/Citron_progress_2.webp)
 
