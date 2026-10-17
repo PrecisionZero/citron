@@ -9,7 +9,7 @@
 ---
 
 <p align="center">
-  A Fabric modpack that pairs performance improvements with practical utility, keeping Minecraft familiar while making it more comfortable to play.
+  A Minecraft modpack focused on performance and utility, made to make the game more enjoyable without changing what makes it Minecraft.
 </p>
 
 ---
@@ -22,31 +22,30 @@
 
 ## About
 
-Citron follows **Comfort Utility**: a curated combination of performance optimisations and useful quality-of-life features. Instead of adding unnecessary content or changing the character of vanilla Minecraft, it focuses on making the existing experience smoother and more convenient.
+Citron is built around performance, convenience, and useful quality-of-life features. The idea is to make Minecraft more comfortable to play without turning it into a different game. I want the features that make everyday gameplay better to already be there, so you don't have to find and set everything up yourself. That's what I mean by **Comfort Utility**.
 
 ## Current Development
 
-| | |
-|---|---|
-| Build | `1.0.0-dev.8+mc1.21.11.fabric` |
-| Minecraft | `1.21.11` |
-| Loader | Fabric |
-| Status | In development |
+Build: `1.0.0-dev.8+mc1.21.11.fabric`
 
-Citron is still in development, so features and configurations may change.
+Minecraft: `1.21.11`  
+Loader: `Fabric`  
+Status: In development
 
-## Who is Citron for?
+Features and configurations may change while Citron is being developed.
 
-Citron is for players who want performance improvements alongside a ready-to-use collection of utility features, rather than assembling their own set of quality-of-life mods. It is not intended to be the smallest possible modpack; its focus is a curated, comfortable experience for players with reasonably capable hardware.
+## Who is it for?
 
-If you prefer a minimal, performance-focused foundation, [Adrenaline](https://github.com/skywardmc/adrenaline) may be a better fit.
+To start off, Citron isn't meant to be an extremely lightweight modpack. If you're looking for something that focuses on performance and keeps things minimal, I'd recommend [Adrenaline](https://github.com/skywardmc/adrenaline) instead.
 
-## Built-in Utility
+Citron is for players who want performance improvements but also want a useful set of features ready to go, without having to find, install, and configure every mod themselves. It's made with reasonably capable hardware in mind.
 
-Citron includes practical features out of the box, such as Zoom and Shulker Box Tooltips. The goal is to make useful tools available from the start, without requiring players to build a separate collection of mods.
+## Built-in Features
 
-Included mods and configurations are selected with compatibility and reliability in mind. Individual features may change as development continues.
+From the start, Citron includes features like Zoom and Shulker Box Tooltips. These are the kinds of additions that make everyday gameplay easier without going overboard. I want the features to be useful, not just there to make the modpack look bigger.
 
-## Built on Adrenaline
+Citron is still in development, so the included mods and configurations may change as I work on it.
 
-Citron uses [Adrenaline](https://github.com/skywardmc/adrenaline) as its performance foundation. We appreciate the work behind Adrenaline and the baseline it provides for Citron to build upon.
+## Adrenaline
+
+Citron wouldn't be where it is without [Adrenaline](https://github.com/skywardmc/adrenaline). It gave me the performance foundation to build on, so credit where it's due: thank you to the Adrenaline team.
