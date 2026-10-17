@@ -125,3 +125,19 @@ Main menu UI improvement
 - Added a "Citron Menu" button to the default menu to allow users to switch back to Citron's custom menu
 - Added custom button textures to Citron's main menu
 - Removed the "Extra Mods" button and added a "Default Menu" button that reverts back to Minecraft's default menu
+
+---
+
+## 1.0.0-dev.8+mc1.21.11.fabric
+
+#### Purpose
+
+Main menu UI improvement
+
+### Notes
+
+- Changed the Citron menu from a title screen to a GUI in FancyMenu
+- Kept the existing settings and elements, but removed the Accessibility and Language buttons from the Citron menu
+- Adjusted the position of the button stack on the right side to give the elements more space
+- Buttons added by other mods now appear on the default menu instead of the Citron menu, preserving the custom menu's layout
+- Removed the Citron version note from the default menu; it remains on the Citron menu
