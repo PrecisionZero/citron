@@ -3,7 +3,7 @@
 **The tree is still a seedling**\
 Give it some time
 
-![Citron Progress](https://raw.githubusercontent.com/PrecisionZero/Citron/refs/heads/main/Assets/Progress.webp)
+![Citron Progress](https://raw.githubusercontent.com/PrecisionZero/citron/refs/heads/main/Assets/Citron_progress_2.webp)
 
 ## About
 
