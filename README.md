@@ -30,9 +30,9 @@ I want the features that make everyday gameplay better to already be there, so y
 
 Build: `1.0.0-dev.8+mc1.21.11.fabric`
 
-Minecraft: `1.21.11`  
-Loader: `Fabric`  
-Status: In development
+- Minecraft: `1.21.11`  
+- Loader: `Fabric`  
+- Status: In development
 
 Features and configurations may change while Citron is being developed.
 
