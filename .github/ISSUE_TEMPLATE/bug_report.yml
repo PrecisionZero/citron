@@ -16,7 +16,7 @@ body:
     id: version
     attributes:
       label: Minecraft & Citron Build ID
-      placeholder: e.g., 1.0.0-dev.7+mc1.21.11.fabric
+      placeholder: e.g., 1.0.0-dev.8+mc1.21.11.fabric
     validations:
       required: true
 
@@ -24,7 +24,7 @@ body:
     id: steps
     attributes:
       label: Explain the actions you took
-      description: What steps did you take to encounter the bug?
+      description: What steps did you take to encounter this bug?
       placeholder: |
         1. 
         2. 
