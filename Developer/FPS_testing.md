@@ -3,11 +3,12 @@
 ## Method
 
 - Tool: CapFrameX.
-- Test only the final version in each major development series.
+- Test the final development build before a release.
 - Take 10 captures of 60 seconds each per pack.
 - Wait 60 seconds after loading the world.
 - Use the same world, scene, settings, and external conditions for both packs.
 - Use the same number of valid captures for a final comparison.
+- Keep original build IDs alongside the development build identifier for historical results.
 
 ## Test setup
 
@@ -69,7 +70,8 @@ Version: `26.5.1+mc1.21.11.fabric`
 
 ## Citron
 
-Version: `dev.1.2.0+mc1.21.11.fabric`
+Version: `1.0.0-dev.3+mc1.21.11.fabric`  
+Original build ID: `dev.1.2.0+mc1.21.11.fabric`
 
 ### Stationary test
 
