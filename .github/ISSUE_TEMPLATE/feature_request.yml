@@ -22,14 +22,14 @@ body:
       required: true
 
   - type: dropdown
-    id: branch
+    id: target
     attributes:
-      label: Applicable Branch
-      description: Which version of Citron would this feature benefit?
+      label: Development Target
+      description: Which development stage should this apply to?
       options:
-        - Citron Core
-        - Citron Leaf
-        - Both
+        - Current development cycle
+        - Future development
+        - Not sure
     validations:
       required: true
 
@@ -38,4 +38,4 @@ body:
     attributes:
       label: Additional Details
       description: Include links to mod pages, screenshots, or specific configuration ideas.
-      placeholder: Any extra information...
+      placeholder: Any additional details...
