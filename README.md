@@ -33,3 +33,11 @@ Features and configurations may change during development.
 ## Nature
 
 Citron would be nothing if it wasn't for [Adrenaline](https://github.com/skywardmc/adrenaline). Thank you Adrenaline for being our baseline and our very foundation used to build Citron off from. 
+
+### Who is it for?
+
+To begin, I'll start off by saying, Citron is NOT for users who want an extremely lightweight modpack, if so I suggest checking out [Adrenaline](https://github.com/skywardmc/adrenaline). Citron is meant for users, with fairly capable hardware, that want the ultimate utility suite and an actually enjoyable gameplay.
+
+From the point you install it, Citron comes bundled with all the important features you'd need: Zoom, Shulker Box Tooltips...  
+
+Everything is configured for reliability and compatibility, ensuring your experience stays unhindered.
