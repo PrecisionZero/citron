@@ -12,21 +12,11 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: branch
-    attributes:
-      label: Citron Branch
-      options:
-        - Citron Core 
-        - Citron Leaf 
-    validations:
-      required: true
-
   - type: input
     id: version
     attributes:
-      label: Minecraft & Citron Version
-      placeholder: e.g., Fabric 1.21.1 / Citron v1.0.0
+      label: Minecraft & Citron Build ID
+      placeholder: e.g., 1.0.0-dev.7+mc1.21.11.fabric
     validations:
       required: true
 
@@ -34,7 +24,7 @@ body:
     id: steps
     attributes:
       label: Explain the actions you took
-      description: What steps did you take to encounter this bug?
+      description: What steps did you take to encounter the bug?
       placeholder: |
         1. 
         2. 
