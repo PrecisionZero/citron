@@ -93,3 +93,19 @@ Main menu UI improvement
 ### Notes
 
 - Added an "Extra Mods" button to include all the custom mods users may add that I haven't accounted for
+
+---
+
+## dev.2.3.0+mc1.21.11.fabric
+
+#### Purpose
+
+Main menu UI improvement
+
+### Notes
+
+- Added a "Citron Menu" button to the default menu to allow users to switch back to Citron's custom menu
+- Added custom button textures to Citron's main menu
+- Removed the "Extra Mods" button and added a "Default Menu" button that reverts back to Minecraft's default menu
+
+
