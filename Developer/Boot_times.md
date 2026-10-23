@@ -137,11 +137,11 @@ Refer to: [Development stage](https://github.com/PrecisionZero/citron/blob/main/
 
 | Metric | Show time¹ | Load time | Total load time |
 | ----------- | ---------- | --------- | --------------- |
-| **Average** | 32.06 | 13.72 | 45.79 |
-| **% Difference from Adrenaline** | +3.09% | +8.46% | +4.69% |
-| **% Difference from baseline build⁵** | -3.17% | -5.31% | -3.80% |
-| CV⁴ | 3.79% | 6.31% | 3.89% |
-| Range | 30.35 - 33.70 | 12.41 - 14.78 | 42.77 - 47.40 |
+| **Average** | 35.32 | 16.86 | 52.21 |
+| **% Difference from Adrenaline** | +13.57% | +33.28% | +19.36% |
+| **% Difference from baseline build⁵** | +6.67% | +16.36% | +9.68% |
+| CV⁴ | 4.98% | 2.43% | 3.87% |
+| Range | 34.12 - 37.34 | 16.39 - 17.16 | 50.52 - 54.45 |
 </details>
 
 ---
