@@ -43,8 +43,6 @@ Run 0 is the first launch and is excluded from summary statistics.
 <details>
   <summary>1.0.0-dev.1+mc1.21.11.fabric</summary>
 
-Original build ID: `dev.1.0.0+mc1.21.11.fabric`
-
 Refer to: [Development stage](https://github.com/PrecisionZero/citron/blob/main/Developer/Development_stage.md#100-dev1mc12111fabric)
 
 | Boot number | Show time¹ | Load time | Total load time |
@@ -74,8 +72,6 @@ Refer to: [Development stage](https://github.com/PrecisionZero/citron/blob/main/
 <details>
   <summary>1.0.0-dev.2+mc1.21.11.fabric</summary>
 
-Original build ID: `dev.1.1.0+mc1.21.11.fabric`
-
 Refer to: [Development stage](https://github.com/PrecisionZero/citron/blob/main/Developer/Development_stage.md#100-dev2mc12111fabric)
 
 | Boot number | Show time¹ | Load time | Total load time |
@@ -101,8 +97,6 @@ Refer to: [Development stage](https://github.com/PrecisionZero/citron/blob/main/
 <details>
   <summary>1.0.0-dev.3+mc1.21.11.fabric</summary>
 
-Original build ID: `dev.1.2.0+mc1.21.11.fabric`
-
 Refer to: [Development stage](https://github.com/PrecisionZero/citron/blob/main/Developer/Development_stage.md#100-dev3mc12111fabric)
 
 | Boot number | Show time¹ | Load time | Total load time |
@@ -113,6 +107,31 @@ Refer to: [Development stage](https://github.com/PrecisionZero/citron/blob/main/
 | 3 | 33.70 | 13.70 | 47.40 |
 | 4 | 32.41 | 14.10 | 46.51 |
 | 5 | 32.19 | 13.61 | 45.80 |
+
+##### Breakdown
+
+| Metric | Show time¹ | Load time | Total load time |
+| ----------- | ---------- | --------- | --------------- |
+| **Average** | 32.06 | 13.72 | 45.79 |
+| **% Difference from Adrenaline** | +3.09% | +8.46% | +4.69% |
+| **% Difference from baseline build⁵** | -3.17% | -5.31% | -3.80% |
+| CV⁴ | 3.79% | 6.31% | 3.89% |
+| Range | 30.35 - 33.70 | 12.41 - 14.78 | 42.77 - 47.40 |
+</details>
+
+---
+
+<details>
+  <summary>* 1.0.0-dev.9+mc1.21.11.fabric</summary>
+
+Refer to: [Development stage](https://github.com/PrecisionZero/citron/blob/main/Developer/Development_stage.md#100-dev3mc12111fabric)
+
+| Boot number | Show time¹ | Load time | Total load time |
+| ----------- | ---------- | --------- | --------------- |
+| 0² | 43.15 | 20.80 | 1:03.95 |
+| 1 | 37.34 | 17.02 | 54.45 |
+| 2 | 34.12 | 16.39 | 50.52 |
+| 3 | 34.50 | 17.16 | 51.66 |
 
 ##### Breakdown
 
