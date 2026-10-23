@@ -124,7 +124,7 @@ Refer to: [Development stage](https://github.com/PrecisionZero/citron/blob/main/
 <details>
   <summary>* 1.0.0-dev.9+mc1.21.11.fabric</summary>
 
-Refer to: [Development stage](https://github.com/PrecisionZero/citron/blob/main/Developer/Development_stage.md#100-dev3mc12111fabric)
+Refer to: [Development stage](https://github.com/PrecisionZero/citron/blob/main/Developer/Development_stage.md#100-dev9mc12111fabric)
 
 | Boot number | Show time¹ | Load time | Total load time |
 | ----------- | ---------- | --------- | --------------- |
