@@ -141,3 +141,23 @@ Main menu UI improvement
 - Adjusted the position of the button stack on the right side to give the elements more space
 - Buttons added by other mods now appear on the default menu instead of the Citron menu, preserving the custom menu's layout
 - Removed the Citron version note from the default menu; it remains on the Citron menu
+
+---
+
+## 1.0.0-dev.9+mc1.21.11.fabric
+
+#### Purpose
+
+Main menu UI improvement and convenience
+
+### Mod changes
+
+| Mod | Purpose | Action |
+| :--- | :--- | :--- |
+| Main Menu Credits | Menu | Added |
+| Fabrishot | Better screenshots | Added |
+
+### Notes
+
+- Added Main Menu Credits to add custom text to the title screen because handling text is buggy in FancyMenu
+- Added a toolbar to the Citron Menu containing buttons to direct players to the Wiki, my Modrinth page, my CurseForge page, and the Discord server
