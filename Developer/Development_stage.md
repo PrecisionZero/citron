@@ -161,3 +161,17 @@ Main menu UI improvement and convenience
 
 - Added Main Menu Credits to add custom text to the title screen because handling text is buggy in FancyMenu
 - Added a toolbar to the Citron Menu containing buttons to direct players to the Wiki, my Modrinth page, my CurseForge page, and the Discord server
+
+---
+
+## 1.0.0-dev.10+mc1.21.11.fabric
+
+#### Purpose
+
+Config cleanup
+
+### Notes
+
+- Removed duplicate thread-priority settings from Stfu so ModernFix is the only one controlling thread priorities
+- Defaults are now shipped through Config Manager's `modpack_defaults`, so updates no longer overwrite player settings
+- Crash Assistant now points to Citron support instead of Adrenaline's
