@@ -1,6 +1,8 @@
 # FPS Testing
 
-## Method
+# Stationary Test
+
+### Method
 
 - Tool: CapFrameX.
 - Test the final development build before a release.
@@ -10,7 +12,7 @@
 - Use the same number of valid captures for a final comparison.
 - Keep original build IDs alongside the development build identifier for historical results.
 
-## Test setup
+### Test setup
 
 | Item | Value |
 | --- | --- |
@@ -25,7 +27,7 @@
 | GPU | Intel UHD Graphics 620 |
 | System RAM | 12 GB |
 
-## Metrics
+### Metrics
 
 | Metric | Better result |
 | --- | --- |
@@ -38,11 +40,9 @@ Use the median to compare performance. CV (coefficient of variation) is calculat
 
 ---
 
-## Adrenaline
+### Adrenaline
 
 Version: `26.5.1+mc1.21.11.fabric`
-
-### Stationary test
 
 | Run | Average FPS | 1% low average FPS | P99 Animation Error (ms) | Adaptive STDEV |
 | --- | ---: | ---: | ---: | ---: |
@@ -57,7 +57,7 @@ Version: `26.5.1+mc1.21.11.fabric`
 | 9 | 116.9 | 59.9 | 3.1 | 13.8 |
 | 10 | 109.9 | 40.1 | 3.2 | 11.9 |
 
-### Breakdown
+#### Breakdown
 
 | Metric | Median | Difference from Adrenaline | CV |
 | --- | ---: | ---: | ---: |
@@ -68,12 +68,10 @@ Version: `26.5.1+mc1.21.11.fabric`
 
 ---
 
-## Citron
+### Citron
 
 Version: `1.0.0-dev.3+mc1.21.11.fabric`  
 Original build ID: `dev.1.2.0+mc1.21.11.fabric`
-
-### Stationary test
 
 | Run | Average FPS | 1% low average FPS | P99 Animation Error (ms) | Adaptive STDEV |
 | --- | ---: | ---: | ---: | ---: |
@@ -83,7 +81,7 @@ Original build ID: `dev.1.2.0+mc1.21.11.fabric`
 | 4 | 97.5 | 46.0 | 4.3 | 11.5 |
 | 5 | 128.4 | 61.7 | 3.8 | 22.1 |
 
-### Breakdown
+#### Breakdown
 
 Citron currently has five captures, compared with ten for the Adrenaline baseline. The comparison is provisional until both packs have the same number of valid captures.
 
@@ -95,3 +93,9 @@ Citron currently has five captures, compared with ten for the Adrenaline baselin
 | Adaptive STDEV | 17.90 | -10.95% | 36.70% |
 
 Difference (%) = ((Citron median - Adrenaline median) / Adrenaline median) × 100. Positive differences are better for FPS metrics; negative differences are better for Animation Error and Adaptive STDEV. Lower CV means less relative variation between captures.
+
+---
+
+# Recreative FPS Test
+
+
