@@ -28,11 +28,11 @@ I want the features that make everyday gameplay better to already be there, so y
 
 ## Current Development
 
-Build: `1.0.0-dev.8+mc1.21.11.fabric`
+Build: `1.0.0-dev.10+mc1.21.11.fabric`
 
 - Minecraft: `1.21.11`  
 - Loader: `Fabric`  
-- Status: In development
+- Status: Wrapping up development
 
 Features and configurations may change while Citron is being developed.
 
