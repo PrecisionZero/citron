@@ -77,7 +77,7 @@ These commands were run to ensure fair tests throughout
 1. Stand at a fixed location, facing a fixed direction of a loaded world
 - Take 10 captures of 60 seconds each per pack
 - Use the same world, scene, settings, and external conditions for both packs
-- Report the data in [Stationary_Results.md]
+- Report the data in [Stationary_Results.md](Stationary_Results.md)
 
 ---
 
@@ -205,4 +205,4 @@ bench_stop() -> ( global_state = 'idle'; );
 
 #### Result
 - Over 20 replays were taken per modpack and it clearly showed the difference in performances between them
-- The full report is available in the [Moving_Results.md]
+- The full report is available in the [Moving_Results.md](Moving_Results.md)
