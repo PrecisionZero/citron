@@ -79,6 +79,8 @@ These commands were run to ensure fair tests throughout
 - Use the same world, scene, settings, and external conditions for both packs
 - Report the data in [Stationary_Results.md](Stationary_Results.md)
 
+
+Existing stationary results use the earlier setup of 12-chunk render distance and 8-chunk simulation distance. The current setup above uses 16 and 5; treat results from these configurations separately.
 ---
 
 # Movement test
@@ -205,4 +207,4 @@ bench_stop() -> ( global_state = 'idle'; );
 
 #### Result
 - Over 20 replays were taken per modpack and it clearly showed the difference in performances between them
-- The full report is available in the [Moving_Results.md](Moving_Results.md)
+- The full report is available in the [Movement_Results.md](Movement_Results.md)
