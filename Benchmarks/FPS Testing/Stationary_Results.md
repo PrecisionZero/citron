@@ -56,6 +56,15 @@ Percentage change = (Citron median − Adrenaline median) / Adrenaline median ×
 | P99 Animation Error (ms) | 3.90 | 4.40 | +12.8% | Lower |
 | Adaptive STDEV | 20.10 | 17.90 | -10.9% | Lower |
 
+## What this means
+
+- **Overall speed:** Citron dev.3's median Average FPS was **122.5**, about **3.8% lower** than Adrenaline's 127.35. The sample means were further apart: 114.02 vs 125.97 FPS.
+- **1% lows:** Citron dev.3's median was **57.1 FPS**, about **4.9% lower** than Adrenaline's 60.05 FPS.
+- **Frame delivery:** Citron's median P99 Animation Error was **12.8% higher**. Lower is better, so this result favoured Adrenaline.
+- **Adaptive STDEV:** Citron's median was **10.9% lower**, which favoured Citron on this metric. However, this metric varied more between Citron captures, so the result was less consistent.
+
+**In simple terms:** this older stationary test showed Citron dev.3 slightly behind Adrenaline in average FPS and 1% lows. It did better on median Adaptive STDEV but worse on Animation Error. Only five Citron captures were available, compared with ten for Adrenaline, so these results are preliminary and do not describe the initial release.
+
 ## Notes
 
 - The capture counts are unequal (10 Adrenaline, 5 Citron), so the comparison is descriptive.
