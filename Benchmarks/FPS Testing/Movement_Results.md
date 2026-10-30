@@ -2,14 +2,15 @@
 
 ## Test identification
 
-| Item | Adrenaline baseline | Citron |
+| Item | Adrenaline | Citron |
 |---|---|---|
 | Test date | 2026-10-27 | 2026-10-29 |
-| Build | Baseline capture set | `1.0.0+mc.1.21.11.fabric` |
+| Build | Baseline capture | `1.0.0+mc.1.21.11.fabric` |
+| Cold captures | 1 | 1 |
 | Warm captures | 20 | 21 |
-| Cold capture | 1 | 1 |
+| Route | Same recorded route | Same recorded route |
 
-Same recorded route, world, game settings, and system-load conditions were used. Adrenaline's original per-run results are recorded in [Developer/FPS Testing/RESULTS.md](../../Developer/FPS%20Testing/RESULTS.md).
+The same world, route, Minecraft settings, and controlled system-load conditions were used. Citron readings are from the initial release build.
 
 ## Raw captures
 
@@ -66,25 +67,24 @@ Same recorded route, world, game settings, and system-load conditions were used.
 | 20 | 108.5 | 111.7 | 65.2 | 48.5 | 13.0 | 11.3 |
 | 21 | 108.2 | 109.9 | 66.3 | 48.0 | 12.6 | 11.6 |
 
-## Breakdown — all warm captures
+## Statistical breakdown
 
-Run 0 (cold) is excluded. Summary values describe the distribution of capture-level readings across 20 Adrenaline runs and 21 Citron runs. Variance is sample variance.
+Run 0 is retained above but excluded from warm-run statistics. SD and variance are sample statistics; CV = SD / mean × 100%.
 
-| Metric | Adrenaline mean | Median | Range | Variance | Citron mean | Median | Range | Variance |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Average FPS | 128.17 | 127.40 | 120.2–146.4 | 46.09 | 105.82 | 106.10 | 102.5–108.5 | 2.29 |
-| Median FPS | 140.28 | 141.55 | 129.9–149.4 | 21.61 | 108.25 | 108.50 | 105.1–111.7 | 2.39 |
-| P1 FPS | 68.84 | 65.35 | 62.1–100.1 | 87.53 | 63.90 | 64.00 | 60.3–66.3 | 1.79 |
-| 1% low average FPS | 47.66 | 45.40 | 39.6–71.0 | 60.02 | 47.00 | 47.20 | 44.6–48.5 | 1.22 |
-| 0.1% low average FPS | 16.88 | 15.90 | 11.4–26.0 | 16.51 | 12.44 | 12.60 | 10.7–13.3 | 0.46 |
-| Min FPS | 4.67 | 5.05 | 1.7–7.7 | 2.70 | 11.50 | 11.40 | 9.9–12.8 | 0.45 |
+| Metric | Adrenaline mean | Median | Min–max | SD | Variance | CV | Citron mean | Median | Min–max | SD | Variance | CV |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Average FPS | 128.17 | 127.40 | 120.2–146.4 | 6.79 | 46.09 | 5.3% | 105.82 | 106.10 | 102.5–108.5 | 1.51 | 2.29 | 1.4% |
+| Median FPS | 140.28 | 141.55 | 129.9–149.4 | 4.65 | 21.61 | 3.3% | 108.25 | 108.50 | 105.1–111.7 | 1.55 | 2.39 | 1.4% |
+| P1 FPS | 68.84 | 65.35 | 62.1–100.1 | 9.36 | 87.53 | 13.6% | 63.90 | 64.00 | 60.3–66.3 | 1.34 | 1.79 | 2.1% |
+| 1% low average FPS | 47.66 | 45.40 | 39.6–71.0 | 7.75 | 60.02 | 16.3% | 47.00 | 47.20 | 44.6–48.5 | 1.10 | 1.22 | 2.4% |
+| 0.1% low average FPS | 16.88 | 15.90 | 11.4–26.0 | 4.06 | 16.51 | 24.1% | 12.44 | 12.60 | 10.7–13.3 | 0.68 | 0.46 | 5.5% |
+| Min FPS | 4.67 | 5.05 | 1.7–7.7 | 1.64 | 2.70 | 35.2% | 11.50 | 11.40 | 9.9–12.8 | 0.67 | 0.45 | 5.9% |
 
 ## Median comparison
 
-Percentage change is calculated as `(Citron median − Adrenaline median) / Adrenaline median × 100`. Positive values mean Citron recorded a higher value; whether that is better depends on the metric (higher FPS is better).
+Percentage change = (Citron median − Adrenaline median) / Adrenaline median × 100%. For FPS metrics, higher is better.
 
-| Metric | Adrenaline median | Citron median | Change |
-|---|---:|---:|---:|
+| Metric | Adrenaline median | Citron median | Median change | |---|---:|---:|---:|
 | Average FPS | 127.40 | 106.10 | -16.7% |
 | Median FPS | 141.55 | 108.50 | -23.3% |
 | P1 FPS | 65.35 | 64.00 | -2.1% |
@@ -94,46 +94,54 @@ Percentage change is calculated as `(Citron median − Adrenaline median) / Adre
 
 ## Steady-state comparison
 
-The last 10 warm captures are compared: Adrenaline runs 11–20 and Citron runs 12–21.
+The final 10 warm captures from each pack are compared: Adrenaline runs 11–20 and Citron runs 12–21.
 
-| Metric | Adrenaline mean (11–20) | Citron mean (12–21) | Change |
-|---|---:|---:|---:|
-| Average FPS | 123.95 | 106.56 | -14.0% |
-| Median FPS | 137.61 | 109.13 | -20.7% |
-| P1 FPS | 64.96 | 64.54 | -0.6% |
-| 1% low average FPS | 44.43 | 47.47 | +6.8% |
-| 0.1% low average FPS | 15.56 | 12.38 | -20.4% |
-| Min FPS | 4.31 | 11.52 | +167.3% |
+| Metric | Adrenaline mean | Adrenaline median | Adrenaline SD | Adrenaline CV | Citron mean | Citron median | Citron SD | Citron CV | Mean change |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Average FPS | 123.95 | 123.10 | 2.94 | 2.4% | 106.56 | 106.30 | 1.08 | 1.0% | -14.0% |
+| Median FPS | 137.61 | 137.75 | 3.94 | 2.9% | 109.13 | 108.80 | 1.08 | 1.0% | -20.7% |
+| P1 FPS | 64.96 | 64.65 | 1.72 | 2.6% | 64.54 | 64.45 | 0.95 | 1.5% | -0.6% |
+| 1% low average FPS | 44.43 | 44.30 | 2.92 | 6.6% | 47.47 | 47.65 | 0.85 | 1.8% | +6.8% |
+| 0.1% low average FPS | 15.56 | 15.60 | 2.79 | 17.9% | 12.38 | 12.45 | 0.67 | 5.4% | -20.4% |
+| Min FPS | 4.31 | 4.00 | 1.52 | 35.2% | 11.52 | 11.40 | 0.47 | 4.1% | +167.3% |
 
 ## Average FPS drift
 
-Five-run block means show how average FPS changed through each session.
+Five-run average-FPS block means:
 
-| Warm runs | Adrenaline average FPS | Citron average FPS |
+| Runs | Adrenaline mean Average FPS | Citron mean Average FPS |
 |---|---:|---:|
 | 1–5 | 136.32 | 103.80 |
 | 6–10 | 128.46 | 106.24 |
 | 11–15 | 125.78 | 106.20 |
 | 16–20 | 122.12 | 106.56 |
-| Citron additional run 21 | — | 108.20 |
+| Extra Citron run 21 | — | NaN |
 
-Adrenaline's average FPS fell from 136.3 in runs 1–5 to 122.1 in runs 16–20 (-10.4%). Citron's average rose from 103.8 in runs 1–5 to 106.6 in runs 16–20 (+2.7%). Citron run 21 is retained in the overall and steady-state summaries but sits outside the four complete five-run blocks.
+Adrenaline changed -10.4% from its first to fourth five-run block. Citron changed +2.7% across the same blocks. Citron's 21st warm capture is included in the overall and steady-state statistics but has no matching fifth Adrenaline block.
 
-## Frame consistency indicators
+## Frame consistency and lows
 
-Ratios use the median of each capture-level metric across warm runs.
-
-| Indicator | Adrenaline | Citron |
+| Indicator (using capture medians) | Adrenaline | Citron |
 |---|---:|---:|
 | Median FPS / Average FPS | 111.1% | 102.3% |
 | 1% low / Average FPS | 35.6% | 44.5% |
 | 0.1% low / Average FPS | 12.5% | 11.9% |
 
-## Key findings
+Adrenaline runs 1 and 2 were previously flagged for unusually high P1 and 1% low results. The median and steady-state comparisons are included to reduce the influence of those early readings.
 
-- Citron's median Average FPS was -16.7% versus Adrenaline across all warm captures.
-- Citron's median 1% low was +4.0%; its median 0.1% low was -20.8%.
-- Average FPS variance was 46.09 for Adrenaline and 2.29 for Citron.
-- Adrenaline runs 1 and 2 have unusually high P1 and 1% low readings in the baseline report; the steady-state table helps separate those early captures from later results.
+## Cold captures
 
-Results are specific to this hardware, Minecraft version, world, settings, route, and test session. They do not represent performance on other systems.
+| Metric | Adrenaline cold | Citron cold |
+|---|---:|---:|
+| Average FPS | 134.3 | 89.5 |
+| Median FPS | 142.2 | 93.2 |
+| P1 FPS | 62.3 | 50.2 |
+| 1% low average FPS | 43.1 | 34.1 |
+| 0.1% low average FPS | 17.1 | 9.8 |
+| Min FPS | 4.4 | 7.6 |
+
+Cold captures are not included in the warm-run statistics.
+
+## Limitations
+
+Results represent this hardware, Minecraft version, world, route, settings, and test session. Adrenaline has 20 warm captures and Citron has 21, so the overall comparison is descriptive; the steady-state comparison uses 10 captures per pack.
