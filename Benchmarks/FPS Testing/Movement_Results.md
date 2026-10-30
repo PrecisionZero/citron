@@ -103,6 +103,15 @@ Percentage change = (Citron median − Adrenaline median) / Adrenaline median ×
 
 ## Steady-state comparison
 
+## What this means in practice
+
+- **Overall speed:** Citron averaged **105.8 FPS**, compared with **128.2 FPS** for Adrenaline — about **17% lower**. Looking only at the final 10 warm captures, Citron was about **14% lower**.
+- **Everyday slowdowns:** Citron's median 1% low was **47.2 FPS**, about **4% higher** than Adrenaline's 45.4 FPS. In the final 10 captures, Citron's average 1% low was about **6.5% higher**.
+- **Heavier stutters:** Citron's median 0.1% low was **12.6 FPS**, about **21% lower** than Adrenaline's 15.9 FPS. This is the clearest weakness in the low-frame-rate results.
+- **Repeatability between runs:** Average FPS varied less from capture to capture with Citron. Its CV was **1.4%**, compared with **5.3%** for Adrenaline — roughly **73% less relative run-to-run variation**. In the final 10 captures, the difference was about **60% less variation**.
+
+**In simple terms:** Adrenaline delivered more FPS overall. Citron's results were much more consistent from one benchmark run to another, and its ordinary 1% lows were similar or slightly better, but its 0.1% lows were worse. Lower run-to-run variation does not automatically mean fewer stutters within an individual play session.
+
 The final 10 warm captures from each pack are compared: Adrenaline runs 11–20 and Citron runs 12–21.
 
 | Metric | Adrenaline mean | Adrenaline median | Adrenaline SD | Adrenaline CV | Citron mean | Citron median | Citron SD | Citron CV | Mean change |
