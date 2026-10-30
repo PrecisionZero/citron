@@ -57,9 +57,12 @@ The replay is tick-based, so route and timing do not depend on FPS. See [Movemen
 ## Statistical breakdown
 
 - Keep cold captures in the raw data; exclude them from warm-run statistics.
-- Report mean, median, minimum, maximum, sample standard deviation, sample variance, and CV for each metric.
-- CV = sample standard deviation / mean × 100%; lower CV means less run-to-run variation.
+- For each exported metric, report the **mean** across captures and its **CV**.
+- CV (coefficient of variation) = sample standard deviation / mean × 100%.
+- CV is a percentage showing relative variation between separate captures. For example, a 5% CV means the standard deviation of the capture results is 5% of their mean. A lower CV means more repeatable results from run to run.
+- A CV of 1.4% is not 1.4% more FPS. It means the standard deviation across captures is 1.4% of the mean FPS.
+- CV measures run-to-run variation, not frame-to-frame stutter within one capture.
+- The per-capture CapFrameX field named `Median FPS` can remain in raw data; across-run summaries report the **mean of those per-capture readings**, not a median calculated across runs.
 - Check movement-test drift using five-run blocks.
 - Compare the last 10 warm captures as the steady-state result.
-- Use median comparisons for the overall pack comparison and state capture counts.
-- Report median FPS / Average FPS and low-to-average ratios as frame-consistency indicators.
+- Compare packs using mean changes and CV, with capture counts stated.
