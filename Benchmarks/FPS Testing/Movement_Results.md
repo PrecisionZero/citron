@@ -93,6 +93,14 @@ Percentage change = (Citron median − Adrenaline median) / Adrenaline median ×
 | 0.1% low average FPS | 15.90 | 12.60 | -20.8% |
 | Min FPS | 5.05 | 11.40 | +125.7% |
 
+### Comparison summary
+
+- Citron's median Average FPS is **16.7% lower** than Adrenaline's.
+- Citron's median P1 FPS is **2.1% lower**, while its median 1% low average is **4.0% higher**.
+- Citron's median 0.1% low average is **20.8% lower**, indicating weaker performance in the slowest fraction of frames.
+- Citron's Average FPS CV is **1.4%**, compared with Adrenaline's **5.3%**. Its captures were more consistent across this test session.
+- The median Min FPS is higher for Citron, but Min FPS is a single-frame extreme and should not outweigh the average and low-percentile metrics.
+
 ## Steady-state comparison
 
 The final 10 warm captures from each pack are compared: Adrenaline runs 11–20 and Citron runs 12–21.
