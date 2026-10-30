@@ -11,9 +11,8 @@
 | Citron | `1.0.0-dev.3+mc1.21.11.fabric` |
 | Original Citron build | `dev.1.2.0+mc1.21.11.fabric` |
 | Captures | 10 Adrenaline; 5 Citron |
-| Metrics | Average FPS, 1% low average FPS, P99 Animation Error, Adaptive STDEV |
 
-This is the earlier stationary dataset. It is not a stationary benchmark of the initial release `1.0.0`; the release-build data currently recorded is the movement test.
+This is the historical stationary comparison. It is not a stationary test of the initial release `1.0.0`; the initial-release dataset is the movement benchmark.
 
 ## Raw captures
 
@@ -35,30 +34,32 @@ This is the earlier stationary dataset. It is not a stationary benchmark of the 
 | Citron dev.3 | 4 | 97.5 | 46.0 | 4.3 | 11.5 |
 | Citron dev.3 | 5 | 128.4 | 61.7 | 3.8 | 22.1 |
 
-## Breakdown
+## Statistical breakdown
 
-Values are calculated across all available captures. Variance is sample variance.
+SD and variance are sample statistics. CV = SD / mean × 100%.
 
-| Metric | Adrenaline mean | Median | Range | Variance | Citron dev.3 mean | Median | Range | Variance |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Average FPS | 125.97 | 127.35 | 107.0–138.7 | 134.94 | 114.02 | 122.50 | 91.5–130.2 | 330.14 |
-| 1% low average FPS | 54.09 | 60.05 | 26.7–65.2 | 154.12 | 53.20 | 57.10 | 43.4–61.7 | 64.13 |
-| P99 Animation Error (ms) | 4.11 | 3.90 | 3.0–5.4 | 0.94 | 4.58 | 4.40 | 3.8–5.3 | 0.38 |
-| Adaptive STDEV | 19.60 | 20.10 | 11.9–26.9 | 28.66 | 18.02 | 17.90 | 11.5–26.8 | 43.74 |
+| Metric | Adrenaline mean | Median | Min–max | SD | Variance | CV | Citron mean | Median | Min–max | SD | Variance | CV |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Average FPS | 125.97 | 127.35 | 107.0–138.7 | 11.62 | 134.94 | 9.2% | 114.02 | 122.50 | 91.5–130.2 | 18.17 | 330.14 | 15.9% |
+| 1% low average FPS | 54.09 | 60.05 | 26.7–65.2 | 12.41 | 154.12 | 23.0% | 53.20 | 57.10 | 43.4–61.7 | 8.01 | 64.13 | 15.1% |
+| P99 Animation Error (ms) | 4.11 | 3.90 | 3.0–5.4 | 0.97 | 0.94 | 23.6% | 4.58 | 4.40 | 3.8–5.3 | 0.61 | 0.38 | 13.4% |
+| Adaptive STDEV | 19.60 | 20.10 | 11.9–26.9 | 5.35 | 28.66 | 27.3% | 18.02 | 17.90 | 11.5–26.8 | 6.61 | 43.74 | 36.7% |
 
 ## Adrenaline comparison
 
-Percentage change is calculated from the per-run medians: `(Citron median − Adrenaline median) / Adrenaline median × 100`.
+Percentage change = (Citron median − Adrenaline median) / Adrenaline median × 100%. Higher is better for FPS metrics; lower is better for Animation Error and Adaptive STDEV.
 
-| Metric | Adrenaline median | Citron dev.3 median | Change | Better direction |
+| Metric | Adrenaline median | Citron dev.3 median | Median change | Better direction |
 |---|---:|---:|---:|---|
 | Average FPS | 127.35 | 122.50 | -3.8% | Higher |
 | 1% low average FPS | 60.05 | 57.10 | -4.9% | Higher |
 | P99 Animation Error (ms) | 3.90 | 4.40 | +12.8% | Lower |
 | Adaptive STDEV | 20.10 | 17.90 | -10.9% | Lower |
 
-- Average FPS and 1% low average FPS were lower for Citron dev.3.
-- P99 Animation Error was higher for Citron dev.3; lower is better.
-- Adaptive STDEV was lower for Citron dev.3 by median, but its sample variance across captures was higher.
+## Notes
 
-The comparison is provisional: Adrenaline has 10 captures and Citron dev.3 has 5. The two datasets should not be treated as a release-build comparison.
+- The capture counts are unequal (10 Adrenaline, 5 Citron), so the comparison is descriptive.
+- Average FPS and 1% low medians are lower for Citron dev.3.
+- P99 Animation Error median is higher for Citron dev.3.
+- Adaptive STDEV median is lower for Citron dev.3, while its across-run CV is higher.
+- Do not treat this historical dev.3 dataset as the initial-release benchmark.
