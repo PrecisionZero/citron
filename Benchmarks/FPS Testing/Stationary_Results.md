@@ -59,7 +59,7 @@ Percentage change = (Citron dev.3 mean − Adrenaline mean) / Adrenaline mean ×
 ## Notes
 
 - The capture counts are unequal (10 Adrenaline, 5 Citron), so the comparison is descriptive.
-- Average FPS and 1% low medians are lower for Citron dev.3.
-- P99 Animation Error median is higher for Citron dev.3.
-- Adaptive STDEV median is lower for Citron dev.3, while its across-run CV is higher.
+- Mean Average FPS and mean 1% low average FPS are lower for Citron dev.3.
+- Mean P99 Animation Error is higher for Citron dev.3; lower is better.
+- Mean Adaptive STDEV is lower for Citron dev.3, but its CV is higher, indicating greater relative variation between captures.
 - Do not treat this historical dev.3 dataset as the initial-release benchmark.
