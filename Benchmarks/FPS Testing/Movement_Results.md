@@ -84,7 +84,8 @@ Run 0 is retained above but excluded from warm-run statistics. SD and variance a
 
 Percentage change = (Citron median − Adrenaline median) / Adrenaline median × 100%. For FPS metrics, higher is better.
 
-| Metric | Adrenaline median | Citron median | Median change | |---|---:|---:|---:|
+| Metric | Adrenaline median | Citron median | Median change |
+|---|---:|---:|---:|
 | Average FPS | 127.40 | 106.10 | -16.7% |
 | Median FPS | 141.55 | 108.50 | -23.3% |
 | P1 FPS | 65.35 | 64.00 | -2.1% |
@@ -115,7 +116,7 @@ Five-run average-FPS block means:
 | 6–10 | 128.46 | 106.24 |
 | 11–15 | 125.78 | 106.20 |
 | 16–20 | 122.12 | 106.56 |
-| Extra Citron run 21 | — | NaN |
+| Extra Citron run 21 | — | 108.20 |
 
 Adrenaline changed -10.4% from its first to fourth five-run block. Citron changed +2.7% across the same blocks. Citron's 21st warm capture is included in the overall and steady-state statistics but has no matching fifth Adrenaline block.
 
