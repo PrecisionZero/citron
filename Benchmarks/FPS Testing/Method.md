@@ -1,7 +1,5 @@
 # FPS Benchmark Method
 
-Citron is compared against Adrenaline, its optimisation foundation, using repeatable stationary and movement tests. The two test types have separate result sets and settings; their FPS values should not be compared directly against each other.
-
 ## Test environment
 
 | Item | Value |
@@ -24,42 +22,44 @@ Citron is compared against Adrenaline, its optimisation foundation, using repeat
 | Particles | All |
 | Mipmap levels | 4 |
 
-The benchmark world uses a fixed daytime, clear weather, disabled spawning and random ticks, and immobilised non-player entities. Chunks are pregenerated before capture. Server ticking is not frozen.
+The benchmark world uses fixed daytime and clear weather, disabled spawning and random ticks, and immobilised non-player entities. Chunks are pregenerated before capture. Server ticking is not frozen.
 
 ## Stationary test
 
-- Stand at the same fixed position and face the same direction.
+- Use the same fixed position and camera direction.
 - Wait 60 seconds after loading the world.
-- Capture 60 seconds per run.
-- Use identical world, scene, settings, and external conditions.
+- Capture for 60 seconds per run.
+- Keep world, scene, settings, and external conditions identical.
 
-The historical stationary results use 12-chunk render distance and 8-chunk simulation distance. They are kept separate from the current movement setup. See [Stationary Results](Stationary_Results.md).
+The historical stationary results use 12-chunk render distance and 8-chunk simulation distance. See [Stationary Results](Stationary_Results.md).
 
 ## Movement test
 
-- Record a complete route once with Carpet, saving player position and camera rotation every game tick.
-- Replay the same route in the same benchmark world for each pack.
+- Record a complete route once with Carpet, saving position and camera rotation every game tick.
+- Replay the same route and world for each pack.
 - Keep CPU process count at 155 ±5 and total RAM use at 5.5 GB ±200 MB.
-- Keep the same system power conditions, game settings, and options.
-- Capture from the start cue until the replay finishes.
+- Keep system power conditions, game settings, and options identical.
+- Capture from the start cue until the replay ends.
 
-The replay is tick-based, so the route and its timing remain the same regardless of FPS. See [Movement Results](Movement_Results.md).
+The replay is tick-based, so route and timing do not depend on FPS. See [Movement Results](Movement_Results.md).
 
 ## Reported metrics
 
-| Metric | Meaning |
-|---|---|
-| Average FPS | Mean frame rate during the capture |
-| Median FPS | Median frame rate during the capture |
-| P1 FPS | First-percentile frame rate |
-| 1% low average FPS | Average frame rate of the slowest 1% of frames |
-| 0.1% low average FPS | Average frame rate of the slowest 0.1% of frames |
-| Min FPS | Lowest single-frame frame rate |
+| Metric | Meaning | Better |
+|---|---|---|
+| Average FPS | Mean frame rate during the capture | Higher |
+| Median FPS | Median frame rate during the capture | Higher |
+| P1 FPS | First-percentile frame rate | Higher |
+| 1% low average FPS | Average of the slowest 1% of frames | Higher |
+| 0.1% low average FPS | Average of the slowest 0.1% of frames | Higher |
+| Min FPS | Lowest single-frame frame rate | Higher |
 
 ## Statistical breakdown
 
-- Keep the cold capture in the raw results; exclude it from warm-run statistics.
-- Report the mean, median, minimum, maximum, and sample variance across warm captures.
+- Keep cold captures in the raw data; exclude them from warm-run statistics.
+- Report mean, median, minimum, maximum, sample standard deviation, sample variance, and CV for each metric.
+- CV = sample standard deviation / mean × 100%; lower CV means less run-to-run variation.
 - Check movement-test drift using five-run blocks.
 - Compare the last 10 warm captures as the steady-state result.
-- Compare Citron and Adrenaline using the same metrics and state the capture counts.
+- Use median comparisons for the overall pack comparison and state capture counts.
+- Report median FPS / Average FPS and low-to-average ratios as frame-consistency indicators.
