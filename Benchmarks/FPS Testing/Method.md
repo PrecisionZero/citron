@@ -1,6 +1,8 @@
-# FPS Testing Method
+# FPS Benchmark Method
 
-## Test Environment
+Citron is compared against Adrenaline, its optimisation foundation, using repeatable stationary and movement tests. The two test types have separate result sets and settings; their FPS values should not be compared directly against each other.
+
+## Test environment
 
 | Item | Value |
 |---|---|
@@ -11,8 +13,8 @@
 | System RAM | 12 GB |
 | Allocated RAM | 4096 MB |
 | World seed | `5872972574357925067` |
-| Render distance | 16 chunks |
-| Simulation distance | 5 chunks |
+| Movement render distance | 16 chunks |
+| Movement simulation distance | 5 chunks |
 | Max framerate | Unlimited |
 | Fullscreen | On |
 | VSync | Off |
@@ -22,29 +24,42 @@
 | Particles | All |
 | Mipmap levels | 4 |
 
-Chunks were pregenerated within a 600-block radius. Time, weather, difficulty, and spawning were fixed. Non-player entities were immobilised; tick freezing was not used.
+The benchmark world uses a fixed daytime, clear weather, disabled spawning and random ticks, and immobilised non-player entities. Chunks are pregenerated before capture. Server ticking is not frozen.
 
-## Stationary Test
+## Stationary test
 
-- Use the same fixed position and camera direction.
+- Stand at the same fixed position and face the same direction.
 - Wait 60 seconds after loading the world.
-- Take 10 captures of 60 seconds per pack.
-- Older stationary results used 12-chunk render distance and 8-chunk simulation distance; keep them separate from results using the current settings.
+- Capture 60 seconds per run.
+- Use identical world, scene, settings, and external conditions.
 
-Results: [Stationary Results](Stationary_Results.md).
+The historical stationary results use 12-chunk render distance and 8-chunk simulation distance. They are kept separate from the current movement setup. See [Stationary Results](Stationary_Results.md).
 
-## Movement Test
+## Movement test
 
-- Record a complete route once, saving player position and camera rotation every game tick.
-- Replay the same route in the same world with the same game settings.
+- Record a complete route once with Carpet, saving player position and camera rotation every game tick.
+- Replay the same route in the same benchmark world for each pack.
 - Keep CPU process count at 155 ±5 and total RAM use at 5.5 GB ±200 MB.
-- Each replay follows the recorded tick sequence, so route timing does not depend on FPS.
+- Keep the same system power conditions, game settings, and options.
+- Capture from the start cue until the replay finishes.
 
-Results: [Movement Results](Movement_Results.md).
+The replay is tick-based, so the route and its timing remain the same regardless of FPS. See [Movement Results](Movement_Results.md).
 
-## Reported Metrics
+## Reported metrics
 
-- Average FPS
-- Variance of Average FPS across captures
+| Metric | Meaning |
+|---|---|
+| Average FPS | Mean frame rate during the capture |
+| Median FPS | Median frame rate during the capture |
+| P1 FPS | First-percentile frame rate |
+| 1% low average FPS | Average frame rate of the slowest 1% of frames |
+| 0.1% low average FPS | Average frame rate of the slowest 0.1% of frames |
+| Min FPS | Lowest single-frame frame rate |
 
-For warm-run summaries, exclude the initial cold capture.
+## Statistical breakdown
+
+- Keep the cold capture in the raw results; exclude it from warm-run statistics.
+- Report the mean, median, minimum, maximum, and sample variance across warm captures.
+- Check movement-test drift using five-run blocks.
+- Compare the last 10 warm captures as the steady-state result.
+- Compare Citron and Adrenaline using the same metrics and state the capture counts.
